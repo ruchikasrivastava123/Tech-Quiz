@@ -4,10 +4,10 @@ var username=readlinesync.question(chalk.bold.green
 ("What's your name? " ));
 console.log("Hi!! "+chalk.italic(username));
 var score =0;
-var b=true;
+var b=false;
 var know=readlinesync.question("Are you ready to play this tech Quiz? ");
-if(know.toUpperCase()==='NO')
-b=false;
+if(know.toUpperCase()==='YES')
+b=true;
 function play( quest, ans)
 {
 var useranswer=readlinesync.question(quest);
